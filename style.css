@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+header{
+    display: flex;
+    justify-content: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 70VW;
+    padding: 24px;
+}
+.title {
+    font-family: "Edu AU VIC WA NT Pre", serif;
+    font-size: larger;
+    font-weight: 900;
+}
+.navitems {
+    list-style-type: none;
+    display: flex;
+    width: 30VW;
+    justify-content: space-around;
+    align-items: center;
+}
+.navitems a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+    position: relative;
+}
+.navitems a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s;
+}
+
+.navitems a:hover::after {
+    width: 100%;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", serif;
+
+}
+.body {
+    width: 70VW;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", serif;
+}
+.body1 h1 {
+    transform: uppercase;
+}
+.body1 h2 {
+    color:#FCA70C;
+    transform: uppercase;
+}
+.body2 img {
+    height: 540px;
+    width: 600px;
+}
+button {
+    background-color: #c4c4f7;
+    padding: 6px 12px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transform: uppercase;
+    margin-top: 15px;
+}
+
+.serviceTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.serviceTitle p {
+    margin: 0;
+}
+.serviceTitle h1 {
+    margin: 0.5VH;
+}
+
+main img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.items{
+    display: flex;
+    justify-content: center;
+}
+.serviceItem{
+    display: flex;
+    width: 60VW;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 25px;
+    height: 19VW;
+    border-radius: 550px;
+    background: linear-gradient(to right,#c4c4f7,white);
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10VW;
+}
+
+.servicesBtn {
+    width: 7VW;
+    border: none;
+    border-radius: 30px;
+    background-color: #0077b6;
+}
+.serviceItem2  {
+    display: flex;
+    width: 60VW;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 25px;
+    height: 19VW;
+    border-radius: 550px;
+    background: linear-gradient(to left,#c4c4f7,white);
+}
+
+.serviceItem2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+    background-color: #c4c4f7;
+    border-radius: 550px;
+    z-index: -1;
+}
+
+.details2{
+    padding-right:10VW ;
+    padding-left: 3VW;
+}
+
+.serviceItem2 img {
+    padding-right: 25px;
+}
+
+.serviceItem p {
+    line-height: 20px;
+}
+
+.serviceItem2 p {
+    line-height: 20px;
+}
