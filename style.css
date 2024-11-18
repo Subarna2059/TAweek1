@@ -134,20 +134,6 @@ main img {
     border-radius: 550px;
     background: linear-gradient(to left,#c4c4f7,white);
 }
-
-.serviceItem2::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0.3;
-    background-color: #c4c4f7;
-    border-radius: 550px;
-    z-index: -1;
-}
-
 .details2{
     padding-right:10VW ;
     padding-left: 3VW;
